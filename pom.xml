@@ -11,10 +11,9 @@
     <modules>
         <module>smmbean</module>
         <module>smmconfig</module>
-        <module>smmrepo</module>
         <module>smmservice</module>
-        <module>smmrepo</module>
         <module>smmweb</module>
+        <module>smmdao</module>
     </modules>
 
     <!-- 添加项目介质使用springboot框架 -->
@@ -38,6 +37,18 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- 引入jpa -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
         <!-- 引入swagger -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -49,6 +60,15 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.4.0</version>
         </dependency>
+
+        <!-- 引入mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+
 
     </dependencies>
 
