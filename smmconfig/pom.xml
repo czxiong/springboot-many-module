@@ -11,5 +11,12 @@
 
     <artifactId>smm-config</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.smm</groupId>
+            <artifactId>smm-bean</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
