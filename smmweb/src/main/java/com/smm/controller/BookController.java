@@ -6,9 +6,9 @@ import com.smm.bean.R;
 import com.smm.service.BookService;
 import com.smm.util.ResultUtil;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import lombok.extern.java.Log;
 import org.apache.commons.lang.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -16,9 +16,8 @@ import java.util.Date;
 
 @RestController
 @RequestMapping("book")
+@Log
 public class BookController {
-
-    private static final Logger log = LoggerFactory.getLogger(BookController.class);
 
     @Resource
     private BookService bookService;
@@ -33,7 +32,7 @@ public class BookController {
 
     @DeleteMapping(value = "{id}")
     @ApiOperation(value = "删除书籍",notes = "根据id删除书籍")
-    public R deleteBook(@PathVariable("id") Integer id){
+    public R deleteBook(@ApiParam(name = "id",value = "主键id",required = true) @PathVariable("id") Integer id){
         bookService.deleteBook(id);
         return ResultUtil.ok();
     }
@@ -48,7 +47,7 @@ public class BookController {
 
     @GetMapping(value = "{id}")
     @ApiOperation(value = "查询单个书籍",notes = "根据id查询单个书籍")
-    public R selectBookOne(@PathVariable("id") Integer id) throws Exception{
+    public R selectBookOne(@ApiParam(name = "id",value = "主键id",required = true) @PathVariable("id") Integer id) throws Exception{
         return ResultUtil.ok(bookService.selectBookOne(id));
     }
 
