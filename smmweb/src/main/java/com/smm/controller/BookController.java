@@ -16,13 +16,12 @@ import java.util.Date;
 
 @RestController
 @RequestMapping("book")
-@Log
 public class BookController {
 
     @Resource
     private BookService bookService;
 
-    @PostMapping
+    @PostMapping(value = "/add",produces = "application/json;charset=utf-8")
     @ApiOperation(value = "添加书籍")
     public R saveBook(@RequestBody Book book){
         book.setPublishTime(new Date());
@@ -30,14 +29,14 @@ public class BookController {
         return ResultUtil.ok();
     }
 
-    @DeleteMapping(value = "{id}")
+    @DeleteMapping(value = "del/{id}")
     @ApiOperation(value = "删除书籍",notes = "根据id删除书籍")
     public R deleteBook(@ApiParam(name = "id",value = "主键id",required = true) @PathVariable("id") Integer id){
         bookService.deleteBook(id);
         return ResultUtil.ok();
     }
 
-    @PutMapping
+    @PutMapping(value = "/update")
     @ApiOperation(value = "修改书籍")
     public R updateBook(@RequestBody Book book){
         book.setPublishTime(new Date());
@@ -45,13 +44,13 @@ public class BookController {
         return ResultUtil.ok();
     }
 
-    @GetMapping(value = "{id}")
+    @GetMapping(value = "/listone/{id}")
     @ApiOperation(value = "查询单个书籍",notes = "根据id查询单个书籍")
     public R selectBookOne(@ApiParam(name = "id",value = "主键id",required = true) @PathVariable("id") Integer id) throws Exception{
         return ResultUtil.ok(bookService.selectBookOne(id));
     }
 
-    @GetMapping
+    @GetMapping(value = "/list")
     @ApiOperation(value = "查询所有书籍")
     public R selectBookList() throws Exception{
         return ResultUtil.ok(bookService.selectBookList());
