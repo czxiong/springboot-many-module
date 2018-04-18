@@ -1,0 +1,62 @@
+2018-04-18 14:44:25.993[restartedMain]INFO  com.smm.SmmwebApplication -Starting SmmwebApplication on czx with PID 1132 (D:\workspace\ideaworkspace\springbootmanymodule\smmweb\target\classes started by czx in D:\workspace\ideaworkspace\springbootmanymodule)
+2018-04-18 14:44:25.995[restartedMain]INFO  com.smm.SmmwebApplication -No active profile set, falling back to default profiles: default
+2018-04-18 14:44:26.039[restartedMain]INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77f5c2fd: startup date [Wed Apr 18 14:44:26 CST 2018]; root of context hierarchy
+2018-04-18 14:44:26.210[background-preinit]INFO  org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 5.3.5.Final
+2018-04-18 14:44:32.823[restartedMain]INFO  com.smm.SmmwebApplication -Starting SmmwebApplication on czx with PID 14992 (D:\workspace\ideaworkspace\springbootmanymodule\smmweb\target\classes started by czx in D:\workspace\ideaworkspace\springbootmanymodule)
+2018-04-18 14:44:32.825[restartedMain]INFO  com.smm.SmmwebApplication -No active profile set, falling back to default profiles: default
+2018-04-18 14:44:32.873[restartedMain]INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ffaffe8: startup date [Wed Apr 18 14:44:32 CST 2018]; root of context hierarchy
+2018-04-18 14:44:33.051[background-preinit]INFO  org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 5.3.5.Final
+2018-04-18 14:44:34.435[restartedMain]INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c3742806] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-18 14:44:34.728[restartedMain]INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 9090 (http)
+2018-04-18 14:44:34.736[restartedMain]INFO  org.apache.catalina.core.StandardService -Starting service Tomcat
+2018-04-18 14:44:34.737[restartedMain]INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-04-18 14:44:34.815[localhost-startStop-1]INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-04-18 14:44:34.816[localhost-startStop-1]INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1943 ms
+2018-04-18 14:44:34.977[localhost-startStop-1]INFO  o.s.boot.web.servlet.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-18 14:44:34.981[localhost-startStop-1]INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-18 14:44:34.981[localhost-startStop-1]INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-18 14:44:34.982[localhost-startStop-1]INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-18 14:44:34.982[localhost-startStop-1]INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-18 14:44:35.606[restartedMain]INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-18 14:44:35.618[restartedMain]INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-18 14:44:35.719[restartedMain]INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.0.12.Final}
+2018-04-18 14:44:35.721[restartedMain]INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+2018-04-18 14:44:35.722[restartedMain]INFO  org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+2018-04-18 14:44:35.781[restartedMain]INFO  org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-18 14:44:35.907[restartedMain]INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-18 14:44:36.338[restartedMain]INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-18 14:44:36.950[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/book/listone/{id}],methods=[GET]}" onto public com.smm.bean.R com.smm.controller.BookController.selectBookOne(java.lang.Integer) throws java.lang.Exception
+2018-04-18 14:44:36.951[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/book/add],methods=[POST]}" onto public com.smm.bean.R com.smm.controller.BookController.saveBook(com.smm.bean.Book)
+2018-04-18 14:44:36.951[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/book/list],methods=[GET]}" onto public com.smm.bean.R com.smm.controller.BookController.selectBookList() throws java.lang.Exception
+2018-04-18 14:44:36.951[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/book/update],methods=[PUT]}" onto public com.smm.bean.R com.smm.controller.BookController.updateBook(com.smm.bean.Book)
+2018-04-18 14:44:36.951[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/book/del/{id}],methods=[DELETE]}" onto public com.smm.bean.R com.smm.controller.BookController.deleteBook(java.lang.Integer)
+2018-04-18 14:44:36.951[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/book/page],methods=[POST]}" onto public com.smm.bean.R com.smm.controller.BookController.selectBookByPage(com.smm.bean.PageParam) throws java.lang.Exception
+2018-04-18 14:44:36.952[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.smm.controller.HelloWorldController.hello()
+2018-04-18 14:44:36.952[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-04-18 14:44:36.954[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-18 14:44:36.955[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-18 14:44:36.955[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-18 14:44:36.957[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-18 14:44:36.957[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-18 14:44:37.124[restartedMain]INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ffaffe8: startup date [Wed Apr 18 14:44:32 CST 2018]; root of context hierarchy
+2018-04-18 14:44:37.170[restartedMain]INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 14:44:37.170[restartedMain]INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 14:44:37.186[restartedMain]INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in exceptionHandle
+2018-04-18 14:44:37.209[restartedMain]INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 14:44:37.451[restartedMain]WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer -Unable to start LiveReload server
+2018-04-18 14:44:37.490[restartedMain]INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-04-18 14:44:37.500[restartedMain]INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2018-04-18 14:44:37.516[restartedMain]INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2018-04-18 14:44:37.523[restartedMain]INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2018-04-18 14:44:37.681[restartedMain]INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9090"]
+2018-04-18 14:44:37.689[restartedMain]INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9090"]
+2018-04-18 14:44:37.699[restartedMain]INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2018-04-18 14:44:37.716[restartedMain]INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer -Tomcat started on port(s): 9090 (http)
+2018-04-18 14:44:37.721[restartedMain]INFO  com.smm.SmmwebApplication -Started SmmwebApplication in 5.227 seconds (JVM running for 6.055)
+2018-04-18 14:44:50.406[http-nio-9090-exec-1]INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-18 14:44:50.406[http-nio-9090-exec-1]INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-18 14:44:50.434[http-nio-9090-exec-1]INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-04-18 14:44:50.457[http-nio-9090-exec-1]INFO  com.smm.controller.HelloWorldController -访问了hello方法
+2018-04-18 14:44:50.457[http-nio-9090-exec-1]ERROR com.smm.controller.HelloWorldController -记录error错误日志
