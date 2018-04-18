@@ -82,6 +82,13 @@
             <version>2.3</version>
         </dependency>
 
+        <!-- 添加druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+
     </dependencies>
 
 </project>
