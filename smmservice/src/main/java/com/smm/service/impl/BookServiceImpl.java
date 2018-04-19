@@ -6,6 +6,8 @@ import com.smm.dao.BookDao;
 import com.smm.enums.ResultEnum;
 import com.smm.service.BookService;
 import com.smm.util.CustomException;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -15,6 +17,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Service
+@CacheConfig(cacheNames = "book")
 public class BookServiceImpl implements BookService {
 
     @Resource
@@ -44,6 +47,7 @@ public class BookServiceImpl implements BookService {
         return book;
     }
 
+    @Cacheable
     @Override
     public List<Book> selectBookList() throws Exception {
         List<Book> book = bookDao.findAll();

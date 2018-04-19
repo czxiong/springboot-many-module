@@ -30,6 +30,18 @@ spring:
       ddl-auto: none
     show-sql: true
     format_sql: true
-
+  ##配置redis数据库
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      max-idle: 20
+      min-idle: 1
+      max-active: 20
+      ##默认是索引为0的数据库
+    database: 0
 server:
   port: 9090
+
+
+
